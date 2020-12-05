@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+    background-color:  #19be8d
+}
+img{
+    border-radius: 100px;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+}
+.continer {
+    display: flex;
+    text-align: center;
+    border: 0px solid grey;
+}
+.profile {
+    flex: 0.25;
+    height: 100vh;
+    border-right: 0px solid grey;
+}
+.repos{
+    flex: 0.5;
+    height: 100vh;
+    border-right: 1px solid grey;
+}
+
+.repo_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    text-align: left;
+    padding: 10px;
+    margin: 15px;
+}
+.repo_item:hover{
+    background: #c1ab2e;
+}
+@media screen and (max-width: 460px){
+    .repo_item{
+        flex-direction: column;
+    }
+    .searchBar  input{
+        width: 20% !important;
+    }
+}
+.repo_title{
+    color: tomato;
+}
+.repo_desc{
+    margin-left: 15px;
+    padding: 10px;
+}
+.repo_link{
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    background: #62ac95;
+    color: white;
+    box-shadow: 
+                inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+                inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.repo_link:hover{
+    background: #60da30;
+}
+.sidebar{
+    flex: 0.25;
+    height: 100vh;
+    
+}
+
+.searchBar {
+    display: flex;
+    justify-content: space-around;
+}
+.appName{
+    margin:10px;
+    padding-top: 12px;
+    font-weight: 900;
+    font-size: large;
+    width: 130px;
+    text-align: center;
+    border-radius: 10px;
+    background: #2ec194;
+    color: white;
+    /* box-shadow: 2px 2px 10px rgb(0, 0, 0),
+                2px -2px 10px  rgb(0, 0, 0),
+                -2px 2px 10px rgb(0, 0, 0),
+                -2px -2px 10px rgb(0, 0, 0),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+                inset 5px 5px 5px rgba(0, 0, 0, 0.1); */
+    box-shadow: 
+                inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+                inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.search{
+    flex: 0.75;
+    text-align: center;
+    margin: 15px;
+}
+.searchBar input {
+    outline: none;
+    max-width: 85%;
+    width: 60%;
+    padding: 10px;
+    background: transparent;
+    border-bottom-left-radius: 20px ;
+    border-top-left-radius: 20px;
+    border: 0px solid  #2ec194;
+    border-right: none;
+}
+.searchBar button {
+    outline: none;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px ;
+    border: 0px solid  #2ec194;
+    border-left: none;
+}
+.searchBar button:hover{
+    background: #e72a69;
+}
+.shadow{
+    background: #2ec194;
+    color: white;
+    box-shadow: 5px -5px 10px rgb(255, 255, 255),
+                5px 5px 10px rgb(0, 0, 0),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+                inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.shadow1{
+    background: #2ec194;
+    color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.shadow2{
+    background: #2ec194;
+    color: white;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+                inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
