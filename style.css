@@ -6,6 +6,10 @@ body {
     box-sizing: border-box;
     background-color:  #19be8d
 }
+p, h4, h2 {
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
 img{
     border-radius: 100px;
     margin: 10px;
@@ -22,12 +26,19 @@ img{
     height: 100vh;
     border-right: 0px solid grey;
 }
-.repos{
-    flex: 0.5;
-    height: 100vh;
-    border-right: 1px solid grey;
+.user_info{
+    text-align: left !important;
+    margin-left: 15px;
 }
-
+a{
+    text-decoration: none;
+    color: #e72a69;
+}
+.repos{
+    flex: 0.75;
+    height: 100vh;
+    border-right: 0px solid grey;
+}
 .repo_item{
     display: flex;
     justify-content: space-between;
@@ -49,7 +60,7 @@ img{
     }
 }
 .repo_title{
-    color: tomato;
+    color: #825959;
 }
 .repo_desc{
     margin-left: 15px;
@@ -59,11 +70,10 @@ img{
     text-decoration: none;
     text-align: center;
     border-radius: 10px;
-    padding: 5px;
-    background: #62ac95;
+    padding: 7px;
+    background: #e72a69;
     color: white;
-    box-shadow: 
-                inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+    box-shadow: inset -5px -5px 5px rgba(255, 255, 255, 0.2),
                 inset 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 .repo_link:hover{
@@ -72,9 +82,7 @@ img{
 .sidebar{
     flex: 0.25;
     height: 100vh;
-    
 }
-
 .searchBar {
     display: flex;
     justify-content: space-around;
@@ -86,28 +94,22 @@ img{
     font-size: large;
     width: 130px;
     text-align: center;
-    border-radius: 10px;
-    background: #2ec194;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #e72a69 !important;
     color: white;
-    /* box-shadow: 2px 2px 10px rgb(0, 0, 0),
-                2px -2px 10px  rgb(0, 0, 0),
-                -2px 2px 10px rgb(0, 0, 0),
-                -2px -2px 10px rgb(0, 0, 0),
-                inset -5px -5px 5px rgba(255, 255, 255, 0.2),
-                inset 5px 5px 5px rgba(0, 0, 0, 0.1); */
-    box-shadow: 
-                inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+    box-shadow: inset -5px -5px 5px rgba(255, 255, 255, 0.2),
                 inset 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 .search{
     flex: 0.75;
-    text-align: center;
     margin: 15px;
 }
 .searchBar input {
     outline: none;
     max-width: 85%;
     width: 60%;
+    color: white;
     padding: 10px;
     background: transparent;
     border-bottom-left-radius: 20px ;
@@ -118,13 +120,14 @@ img{
 .searchBar button {
     outline: none;
     padding: 10px;
+    background: #e72a69 !important;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px ;
     border: 0px solid  #2ec194;
     border-left: none;
 }
 .searchBar button:hover{
-    background: #e72a69;
+    background: #2ec194 !important;
 }
 .shadow{
     background: #2ec194;

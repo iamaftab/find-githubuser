@@ -1,3 +1,4 @@
+//document.documentElement.style.setProperty('--animate-duration', '2s');
 $(document).ready(function() {
     $('#searchBtn').on('click', function() {
        let userName = $('#searchKey').val();
@@ -15,15 +16,17 @@ $(document).ready(function() {
                     <img src="${userData.avatar_url}" class="shadow" alt="avatar">
                 </div>
                 <div class="username">
-                    <h2 class="name">${userData.name}</h2>
-                    <p class="userId">@${userData.login}</p>
-                    <p>
-                        <h4>${userData.bio}</h4>
-                        <h4>${userData.location}</h4>
-                        <h4>Blog: <a href="https://${userData.blog}" target="_blank">${userData.blog}</a></h4>
-                    </p>
+                    <h2 class="name animate__animated animate__backInDown">${userData.name}</h2>
+                    <h3 class="userId animate__animated animate__backInLeft">@${userData.login}</h3>
+                    <div class="user_info">
+                        <h4 class="animate__animated animate__backInLeft animate__delay-1s"><i class="material-icons">work</i> ${userData.bio}</h4>
+                        <h4 class="animate__animated animate__backInLeft animate__delay-2s"><i class="material-icons">location_on</i> ${userData.location}</h4>
+                        <h4 class="animate__animated animate__backInLeft animate__delay-3s"><i class="material-icons">rss_feed</i><a href="https://${userData.blog}" target="_blank"> ${userData.blog}</a></h4>
+                        <h4 class="animate__animated animate__backInLeft animate__delay-4s"><i class="material-icons">supervisor_account</i> Follower : ${userData.followers}</h4>
+                        <h4 class="animate__animated animate__backInLeft animate__delay-5s"><i class="material-icons">follow_the_signs</i> Following : ${userData.following}</h4>
+                    </div>
                 </div>
-                </div>
+            </div>
            `);
        });
 
@@ -37,7 +40,7 @@ $(document).ready(function() {
            $('.repos').html("");
            $.each(repos, (index, repo) =>{
             $('.repos').append(`
-            <div class="repo_item shadow1">
+            <div class="repo_item shadow1 animate__animated animate__backInUp">
                  <div class="details">
                      <h2 class="repo_title">${repo.name}</h2>
                      <p class="repo_desc">${repo.description}</p>
