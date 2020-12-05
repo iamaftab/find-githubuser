@@ -4,7 +4,7 @@
 
 Find Github User </h2>
 
- [Live Website]()
+ [Live Website](https://iamaftab.github.io/find-githubuser/)
 
 ---
 
