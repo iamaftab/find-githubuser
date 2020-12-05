@@ -4,7 +4,7 @@ $(document).ready(function() {
        let userName = $('#searchKey').val();
 
        $.ajax({
-           url:'http://api.github.com/users/' + userName,
+           url:'https://api.github.com/users/' + userName,
            data: {
                //add your github client details
            }
@@ -31,7 +31,7 @@ $(document).ready(function() {
        });
 
        $.ajax({
-        url:'http://api.github.com/users/' + userName +'/repos',
+        url:'https://api.github.com/users/' + userName +'/repos',
         data: {
             //add your github client details
         }
